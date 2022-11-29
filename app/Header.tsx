@@ -13,7 +13,7 @@ export default function Header() {
             title: "RULES",
           },
           {
-            title: "STORE",
+            title: "DISCORD",
           },
         ],
       };
@@ -45,8 +45,8 @@ export default function Header() {
             <div>
               {/* Buttons */}
               <div className="hidden flex-row space-x-4 md:flex">
-                <button className="rounded-lg bg-yellow-500 px-8 py-4 font-medium text-dark transition hover:bg-yellow-600">
-                  <p className="text-lg font-medium">play.bettergames.online</p>
+                <button className="rounded-lg bg-yellow-400 px-8 py-4 font-medium text-dark transition hover:bg-amber-400">
+                  <p className="text-lg font-medium">STORE</p>
                 </button>
               </div>
             </div>
