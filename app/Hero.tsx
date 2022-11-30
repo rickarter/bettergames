@@ -16,7 +16,7 @@ export default function Hero() {
     return (
         <>
         <section className="flex w-full bg-white">
-            <div className="bg-[url('/Beta.webp')] mx-auto grid max-w-7xl grid-cols-1 gap-4 px-8 py-8">
+            <div className="mx-auto grid max-w-7xl grid-cols-1 gap-y-8 px-8 py-8">
             {/* Server Info */}
                 <div className="flex flex-col justify-center space-y-8">
                   <h1
