@@ -20,7 +20,7 @@ export default function Hero() {
             {/* Server Info */}
                 <div className="flex flex-col justify-center space-y-8">
                   <h1
-                  className={`${dm.className} bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-yellow-400 text-center text-6xl font-bold lg:text-8xl`}
+                  className={`${dm.className} bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-yellow-400 text-center text-6xl font-bold lg:text-7xl`}
                   >
                   {hero_content?.h1}
                   </h1>
@@ -29,7 +29,7 @@ export default function Hero() {
                   </p>
                   <div className="flex flex-col justify-center items-center">
                     <button className="rounded-lg bg-gradient-to-r from-amber-400 to-yellow-400 px-8 py-5 font-medium text-grey text-2xl transition hover:bg-amber-400">
-						{hero_content?.cta}
+                      {hero_content?.cta}
                     </button>
                   </div>
                 </div>
