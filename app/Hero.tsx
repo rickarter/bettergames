@@ -5,7 +5,7 @@ export default function Hero() {
     const hero_content = {
       h1: "A Better Place To Enjoy Minecraft",
       description:
-        "We are here to provide you with better mini game experience",
+        "We are here to provide you with better minigame experience",
       hero_image: {
         alt: "Hero Image",
         path: "Path to image",
@@ -16,15 +16,15 @@ export default function Hero() {
     return (
         <>
         <section className="flex w-full bg-grey">
-            <div className="mx-auto grid max-w-7xl grid-cols-1 gap-y-8 px-8 py-24">
+            <div className="bg-blur-sm mx-auto grid max-w-7xl grid-cols-1 gap-y-8 px-8 py-24">
             {/* Server Info */}
-                <div className="flex flex-col justify-center space-y-8">
+                <div className="flex flex-col justify-center space-y-14">
                   <h1
-                  className={`${dm.className} bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-yellow-400 text-center text-6xl font-bold lg:text-7xl`}
+                  className={`${dm.className} bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-yellow-400 text-center text-8xl font-bold lg:text-8xl`}
                   >
                   {hero_content?.h1}
                   </h1>
-                  <p className="text-center font-normal text-3xl text-gray-600">
+                  <p className="text-center font-normal text-4xl text-grey-600">
                   {hero_content?.description}
                   </p>
                   <div className="flex flex-col justify-center items-center">
