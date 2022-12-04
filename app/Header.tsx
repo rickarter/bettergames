@@ -8,17 +8,20 @@ export default function Header() {
         menu: [
           {
             title: "HOME",
+            link: "/",
           },
           {
             title: "RULES",
+            link: "/rules",
           },
           {
             title: "DISCORD",
+            link: "https://discord.gg/gxg3usmMKx",
           },
         ],
       };
       return (
-        <header className="w-full bg-white py-6 shadow">
+        <header className="w-full bg-white py-6">
           <nav className="mx-auto flex max-w-7xl flex-row items-center justify-between px-8">
             {/* Logo */}
             <Image
@@ -37,7 +40,7 @@ export default function Header() {
                     className="cursor-pointer transition hover:text-amber-400"
                     key={i}
                   >
-                    <p className="text-xl font-medium">{item?.title}</p>
+                    <a className="text-xl font-medium" href={`${item?.link}`}>{item?.title}</a>
                   </li>
                 ))}
             </ul>
