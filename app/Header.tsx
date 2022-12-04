@@ -45,7 +45,7 @@ export default function Header() {
             <div>
               {/* Buttons */}
               <div className="hidden flex-row space-x-4 md:flex">
-                <button className="rounded-lg bg-yellow-400 px-8 py-4 font-medium text-dark transition hover:bg-amber-400">
+                <button className="rounded-lg bg-gradient-to-r from-amber-400 to-yellow-400 px-8 py-4 font-medium text-dark transition hover:bg-amber-400">
                   <p className="text-lg font-medium">STORE</p>
                 </button>
               </div>
