@@ -26,7 +26,8 @@ export default function Hero() {
     return (
         <>
         <section className="flex w-full flex-col">
-            <div className="bg-gray mx-auto grid max-w-7xl grid-cols-1 gap-y-8 px-8 py-24">
+		<div className="bg-[url('/map.png')] bg-top">
+            <div className="bg-[url('/background.png')] bg-top mx-auto grid max-w-7xl grid-cols-1 gap-y-8 px-8 py-24">
             {/* Server Info */}
                 <div className="flex flex-col justify-center space-y-14">
                   <h1
@@ -34,7 +35,7 @@ export default function Hero() {
                   >
                   {hero_content?.h1}
                   </h1>
-                  <p className="text-center font-normal text-4xl text-gray-600">
+                  <p className="text-center font-normal text-4xl text-white">
                   {hero_content?.description}
                   </p>
                   <div className="flex flex-col justify-center items-center">
@@ -44,8 +45,9 @@ export default function Hero() {
                   </div>
                 </div>
             </div>
+		</div>
 
-            <div className="bg-gray-100 mx-auto grid w-full cols-1 gap-y-8 px-12 py-12 md:grid-cols-3">
+            <div className="bg-gray-100 mx-auto grid w-full cols-1 gap-x-20 gap-y-8 px-12 py-12 md:grid-cols-3">
               {/* Subway Surfers Info */}
               <div className="flex flex-col space-y-5">
                 <h1
