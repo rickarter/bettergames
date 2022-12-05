@@ -14,6 +14,7 @@ export default function Hero() {
     }
     return (
         <> 
+            <p>I'm gonna have rules here</p>
         </>
     );
 }
