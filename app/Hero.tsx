@@ -1,5 +1,7 @@
+'use client';
 import Image from "next/image";
 import { DM_Sans } from "@next/font/google";
+import {useState} from "react";
 const dm = DM_Sans({ subsets: ["latin"], weight: "700" });
 export default function Hero() {
     const hero_content = {
@@ -32,6 +34,14 @@ export default function Hero() {
       },
     }
 
+	const initialState = hero_content?.cta  
+	const [buttonText, setButtonText] = useState(initialState)
+	function handleClick() {
+		setButtonText("Copied to clipboard");
+		setTimeout(() => setButtonText(initialState), 1000)
+		navigator.clipboard.writeText("play.bettergames.online")
+	}
+
     return (
         <>
         <section className="flex w-full flex-col">
@@ -48,8 +58,8 @@ export default function Hero() {
                     {hero_content?.description}
                     </p>
                     <div className="flex flex-col justify-center items-center">
-                      <button className="rounded-lg shadow-2xl bg-gradient-to-r from-amber-400 to-yellow-400 px-8 py-5 font-medium text-grey text-2xl transition hover:bg-amber-400">
-                        {hero_content?.cta}
+                      <button className="w-96 rounded-lg shadow-2xl bg-gradient-to-r from-amber-400 to-yellow-400 px-8 py-5 font-medium text-grey text-2xl transition hover:bg-amber-400" onClick={handleClick}>
+                        {buttonText}
                       </button>
                     </div>
                   </div>
