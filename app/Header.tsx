@@ -21,16 +21,18 @@ export default function Header() {
         ],
       };
       return (
-        <header className="w-full bg-white py-6">
+        <header className="w-full bg-white py-6 shadow">
           <nav className="mx-auto flex max-w-7xl flex-row items-center justify-between px-8">
             {/* Logo */}
-            <Image
-              src={header_content?.logo?.path}
-              height={50}
-              width={146}
-              priority
-              alt={header_content?.logo?.title}
-            />
+			<a href="/">
+				<Image
+				  src={header_content?.logo?.path}
+				  height={50}
+				  width={146}
+				  priority
+				  alt={header_content?.logo?.title}
+				/>
+			</a>
     
             {/* Nav menu items */}
             <ul className="item-center hidden flex-row space-x-8 lg:flex">
@@ -52,6 +54,23 @@ export default function Header() {
                   <p className="text-lg font-medium">STORE</p>
                 </button>
               </div>
+			  {/* Menu Icon */}
+			  <div className="md:hidden">
+				  <svg
+				  xmlns="http://www.w3.org/2000/svg"
+				  fill="none"
+				  viewBox="0 0 24 24"
+				  strokeWidth={1.5}
+				  stroke="currentColor"
+				  className="h-10 w-10"
+			      >
+				  <path
+					strokeLinecap="round"
+					strokeLinejoin="round"
+					d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+				  />
+				  </svg>
+			  </div>
             </div>
           </nav>
         </header>

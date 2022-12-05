@@ -36,11 +36,11 @@ export default function Hero() {
         <>
         <section className="flex w-full flex-col">
           <div className="bg-[url('/map.png')] bg-top">
-            <div className="bg-[url('/background.png')] bg-top mx-auto grid max-w-7xl grid-cols-1 gap-y-8 px-8 py-24">
+            <div className="bg-inherit md:bg-[url('/background.png')] bg-top mx-auto grid max-w-7xl grid-cols-1 gap-y-8 px-8 py-24">
               {/* Server Info */}
                   <div className="flex flex-col justify-center space-y-14">
                     <h1
-                    className={`${dm.className} bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-yellow-400 text-center text-8xl font-bold lg:text-8xl`}
+                    className={`${dm.className} bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-yellow-400 text-center text-5xl font-bold lg:text-8xl`}
                     >
                     {hero_content?.h1}
                     </h1>
