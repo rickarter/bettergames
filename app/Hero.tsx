@@ -40,7 +40,7 @@ export default function Hero() {
               {/* Server Info */}
                   <div className="flex flex-col justify-center space-y-14">
                     <h1
-                    className={`${dm.className} bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-yellow-400 text-center text-5xl font-bold lg:text-8xl`}
+                    className={`${dm.className} bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-yellow-400 text-center text-5xl font-bold lg:text-8xl`}
                     >
                     {hero_content?.h1}
                     </h1>

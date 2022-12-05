@@ -35,7 +35,7 @@ export default function Header() {
 			</a>
     
             {/* Nav menu items */}
-            <ul className="item-center hidden flex-row space-x-8 lg:flex">
+            <ul className="item-center hidden flex-row space-x-8 md:flex">
               {header_content?.menu &&
                 header_content?.menu.map((item, i) => (
                   <li

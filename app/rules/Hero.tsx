@@ -17,13 +17,64 @@ export default function Hero() {
 			},
 		],
         rules: [
-
+            {
+                title: "Overview",
+                rule: [
+                    {
+                        text: "Below are the rules that apply to everyone playing on Better Games."
+                    },
+                ]
+            },
+            {
+                title: "Gameplay",
+                rule: [
+                    {
+                        text: "Using any unfair advantage, cheat, etc will result in a ban. We do not care if you complain."
+                    },
+                    {
+                        text: "Cross-teaming, encouraging rule-breaking is not allowed."
+                    }
+                ]
+            },
+            {
+                title: "Inappropriate Content and Cosmetics",
+                rule: [
+                    {
+                        text: "Using inappropriate capes, skins, usernames is forbidden."
+                    }
+                ]
+            },
+            {
+                title: "Server Bugs",
+                rule: [
+                    {
+                        text: "You can report bugs to our team via Discrod Server."
+                    },
+                    {
+                        text: "Reporting bugs helps us fix and improve the gameplay experience. Please include as much information and detail as possible when reporting issues so that we are able to understand and resolve the issue faster."
+                    }
+                ]
+            },
+            {
+                title: "Reporting Players",
+                rule: [
+                    {
+                        text: "You can report rule breakers through the #report channel on our discrod server."
+                    },
+                    {
+                        text: "Reporting players helps us provide better quality gameplay exprience for the community. So if you encounter unexpected behaviour we encourage you to report the rule breaker."
+                    },
+                    {
+                        text: "Please provide as much information and detail as possible when reporting someone. Attaching visual proves like screenshots, recordings can help resolve the issue faster."
+                    }
+                ]
+            },
         ],
     }
     return (
         <> 
-			<section className="bg-slate-100 flex w-full h-screen flex-col py-16">
-				<div className="ring-slate-200 ring-offset-2 ring-2 rounded-lg bg-white mx-auto h-full flex flex-col w-3/5 py-8 space-y-6">
+			<section className="bg-slate-100 flex w-full flex-col py-0 md:py-16">
+				<div className="ring-slate-200 ring-offset-2 ring-2 rounded-lg bg-white mx-auto h-full flex flex-col max-w-3xl py-8 space-y-6">
 					<div className="flex flex-col justify-center space-y-6 px-16">
 						<h1
 						className={`${dm.className} rounded-lg bg-blue-100 text-center text-4xl py-4`}
