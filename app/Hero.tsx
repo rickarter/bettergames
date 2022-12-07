@@ -58,7 +58,7 @@ export default function Hero() {
                     {hero_content?.description}
                     </p>
                     <div className="flex flex-col justify-center items-center">
-                      <button className="w-96 rounded-lg shadow-2xl bg-gradient-to-r from-amber-400 to-yellow-400 px-8 py-5 font-medium text-grey text-2xl transition hover:bg-amber-400" onClick={handleClick}>
+                      <button title="Hello world" className="w-96 rounded-lg shadow-2xl bg-gradient-to-r from-amber-400 to-yellow-400 px-8 py-5 font-medium text-grey text-2xl transition hover:bg-amber-400" onClick={handleClick}>
                         {buttonText}
                       </button>
                     </div>
