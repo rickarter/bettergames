@@ -17,6 +17,9 @@ module.exports = {
       },
       colors: {
         "dark-blue": '#001561',
+      },
+      spacing: {
+        "15.5": '3.75rem'
       }
     },
   },

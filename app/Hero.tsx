@@ -57,10 +57,25 @@ export default function Hero() {
                     <p className="text-center font-normal text-4xl text-white">
                     {hero_content?.description}
                     </p>
-                    <div className="flex flex-col justify-center items-center">
+                    <div className="flex flex-col justify-center items-center group">
                       <button title="Hello world" className="w-96 rounded-lg shadow-2xl bg-gradient-to-r from-amber-400 to-yellow-400 px-8 py-5 font-medium text-grey text-2xl transition hover:bg-amber-400" onClick={handleClick}>
                         {buttonText}
                       </button>
+                      <span
+                      className="relative w-auto p-2 m-2 rounded-md top-0
+                      bg-yellow-200
+                      transition-all duration-100
+                      origin-center scale-0 
+                      group-hover:scale-100
+                      w-36
+                      group-hover:top-4
+                      shadow-2xl">
+                        Click to copy 💡 
+                        <div className="h-0 w-0 border-x-8 border-x-transparent border-b-[16px] border-b-yellow-200
+                        absolute origin-center
+                        -translate-y-12 translate-x-[3.4rem]">
+                        </div>
+                      </span>
                     </div>
                   </div>
               </div>
